@@ -33,11 +33,13 @@
       				<a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""> </a>
     			</div>
     			<div class="collapse navbar-collapse" id="navigation">
-      				<ul id="nav" class="nav navbar-nav">
-        				<li><a href="#">Viaja</a></li>
-        				<li><a href="#">Conduce</a></li>
+    				<div id="ul">
+      				<ul class="nav navbar-nav">
+        				<li><a href="#tarifas">Viaja</a></li>
+        				<li><a href="#conductor">Conduce</a></li>
         				<li><a href="#">Inicia Sesión</a></li>
       				</ul>
+      				</div>
     			</div>
   			</div>
 		</nav>	
@@ -45,14 +47,20 @@
 <!--Fin Navbar -->
 	
 <!--Inicio Hero -->
-	<section id="hero">
+	<section>
+	    <div id="hero">
 		<div id="conduce" class="row">
 			<div class="col-md-12">
 				<h1>Disfruta del viaje <br>Eres dueño de tu tiempo</h1>
-				<h3>Viaja con <img src="assets/img/logo-blanco.png" alt=""></h3>
-				<p>REGÍSTRATE</p>
-				<p> o bien</p>
-				<button>Conviértete en conductor</button>	
+				<h3>Viaja con<img  id="img-peq" src="assets/img/logo-blanco.png" alt=""></h3><br>
+				<p>REGÍSTRATE</p> <br>
+				<div style="height: 1px; background-color: white; text-align: center">
+                	<span style="background-color: #f7b617; position: relative; top: -0.7em;">
+                 	   - O bien 
+                	</span><br>
+				</div>
+				<button id="btn-cdtor">Conviértete en conductor</button>	
+			</div>
 			</div>
 		</div>
 	</section>
@@ -87,7 +95,7 @@
 <!--Fin Conduce-->
 
 <!--Inicio Tarifas-->
-    <section>
+    <section id="tarifas">
     	<div class="row">
       		<div class="col-md-6 col-sm-12">
       			<button id="encuentrame">Encuéntrame</button>

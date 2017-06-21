@@ -1,11 +1,24 @@
 /*Inicio Navbar */
 .navbar{
 	margin-bottom: 0;
-	padding: 25px 5px;
+	padding: 30px 10px 40px 10px;
 
 }
-#nav{
-	text-align: right;
+#navigation{
+	text-align: center;
+
+}
+a img{
+	padding: 0 140px;
+}
+
+.nav>li>a {
+    padding:10px 25px;
+}
+ .navbar-nav{
+	float: right;
+	padding-right: 30px;
+	padding-top: 20px;
 }
 .navbar-toggle {
   overflow: hidden;
@@ -41,18 +54,24 @@
     background-position: center bottom;
     background-repeat: no-repeat;
     color: white;
-    padding:0;
-    margin:0;
 }
 #conduce{
 	background-color: #f7b617;
-	background-clip: content-box;
-	width: 550px;
-	margin-left: 55%;
-	padding: 20px;
-	border-radius: 10px;
+	width: 535px;
+	height: 55vh;
+	position: relative;
+	top: 275px;
+	float: right;
+	padding: 30px;
+	border-radius: 3px;
     overflow: auto;
 }
+#img-peq{
+	width:25%;
+	height: 25%;
+	padding-left: 17px;
+}
+
 /*Fin Hero */
 /*Inicio Información */
 #informacion{
@@ -68,7 +87,6 @@
 /*Inicio Conduce*/
 #conductor{
 	background-image: url(../img/conduce.jpg);
-	height: 135vh;
     background-size: cover;
     background-position:25% 75%;
     background-repeat: no-repeat;
@@ -78,7 +96,7 @@
 	background-clip: content-box;
 	width: 550px;
 	margin-left: 55%;
-	padding: 20px;
+	padding: 15px;
 	border-radius: 10px;
     overflow: auto;
 }
@@ -88,21 +106,32 @@
 	width: 50%;
 	height: 100vh;
 	border:2px solid black;
+	cursor: url("../img/car.png"), auto;
 }
 button{
+	text-align: center;
 	margin:15px auto;
 	padding: 10px 15px;
-	color: white;
-	background-color: #faae27;
+	color: black;
+	background-color: white;
 	border: 0;
 	font-weight: 700;
-	border-radius: 2px;
+	border-radius: 5px;
 	font-size: 15px;
 	display: inline-block;
 }
 button:hover, button:focus{
 	outline: 0;
 }
+#btn-cdtor{
+	margin: 30px 40px 0 10px;
+}
+#btn-cdtor:hover{
+	background-color: #FB8C00;
+	color: #424242;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
 
 /*Fin Tarifas*/
 /*Inicio Footer */
