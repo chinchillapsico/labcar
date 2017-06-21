@@ -1,22 +1,22 @@
-/*Color-lab: #f7b617
-Color gris (footer): #2b2b2b */
-
-
 /*Inicio Navbar */
 .navbar{
 	margin-bottom: 0;
+	padding: 25px 5px;
 
+}
+#nav{
+	text-align: right;
 }
 .navbar-toggle {
   overflow: hidden;
 
-  .icon-bar {
+.icon-bar {
     transition: opacity, transform;
     transition-duration: $speed;
     transition-timing-function: $easing;
-  }
+}
 
-  &:not(.collapsed) {
+    &:not(.collapsed) {
     .icon-bar {
       &:nth-child(1) {
         transform: translateY(6px) rotate(45deg);
@@ -32,6 +32,7 @@ Color gris (footer): #2b2b2b */
   }
 }
 /*Fin Navbar */
+
 /*Inicio Hero */
 #hero{
 	background-image: url(../img/taxi.jpg);
