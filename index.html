@@ -6,12 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/png" href="assets/imagen/joystick.png">
 	<!-- FontAwesome -->
 	<script src="https://use.fontawesome.com/b432f04897.js"></script>
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<!-- CDN Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- main.css -->
@@ -22,18 +20,99 @@
 </head>
 <body>
 <!--Inicio Navbar -->
+	<section id="navbar">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  			<div class="container">
+    			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="sr-only">Toggle navigation</span>
+   					</button>
+      				<a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""> </a>
+    			</div>
+    			<div class="collapse navbar-collapse" id="navigation">
+      				<ul class="nav navbar-nav">
+        				<li><a href="#">Viaja</a></li>
+        				<li><a href="#">Conduce</a></li>
+        				<li><a href="#">Inicia Sesión</a></li>
+      				</ul>
+    			</div>
+  			</div>
+		</nav>	
+	</section>
 <!--Fin Navbar -->
+	
 <!--Inicio Hero -->
+	<section id="hero">
+		<div id="conduce" class="row">
+			<div class="col-12">
+				<h1>Disfruta del viaje <br>Eres dueño de tu tiempo</h1>
+				<h3>Viaja con <img src="assets/img/logo-blanco.png" alt=""></h3>
+				<p>REGÍSTRATE</p>
+				<p> o bien</p>
+				<button>Conviértete en conductor</button>	
+			</div>
+		</div>
+	</section>
 <!--Fin Hero -->
+	
 <!--Inicio Información -->
+    <section id="informacion">
+    	<div class="row">
+    		<div class="col-md-6">
+    			<img src="assets/img/celular.png" alt="">
+    		</div>
+    		<div class="col-md-6">
+    			<h1>Descarga la nueva app</h1>
+				<p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido. <br>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+    		</div>
+    		
+    	</div>
+		
+	</section>
 <!--Fin Información -->
+
 <!--Inicio Conduce-->
+	<section>
+		
+	</section>
 <!--Fin Conduce-->
+
 <!--Inicio Tarifas-->
+    <section>
+    	<div class="row">
+      		<div class="col-md-12 col-sm-12">
+      			<button id="encuentrame">Encuéntrame</button>
+      			<label><span>Origen:</span> <input type="text" name="from" placeholder="Introduce una ubicación"></label>
+      			<label><span>Destino:</span> <input type="text" name="to" placeholder="Introduce una ubicación"></label>
+      			<button id="encuentrame">Ruta</button>
+      		</div>
+    	</div>
+    	<div class="row">
+      		<div class="col-md-12 col-sm-12" id="map">
+        <!-- mapa-->
+      		</div>
+    	</div>
+	</section>
 <!--Fin Tarifas-->
+
 <!--Inicio Footer -->
+	<section>
+		
+	</section>
 <!--Fin Footer -->
 
+<!-- javascript link -->
 <script src="assets/js/main.js"></script>
+<!-- google maps link -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2chY2FX5SiFQLzmFoRH6S4Hsmjcw1Olc&callback=initMap"
+  type="text/javascript"></script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
