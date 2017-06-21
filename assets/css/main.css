@@ -56,14 +56,35 @@ Color gris (footer): #2b2b2b */
 /*Inicio Información */
 #informacion{
 	background-color: #f7b617;
+	margin: 0;
 
+}
+.row{
+	margin:0;
+	padding:0;
 }
 /*Fin Información */
 /*Inicio Conduce*/
+#conductor{
+	background-image: url(../img/conduce.jpg);
+	height: 135vh;
+    background-size: cover;
+    background-position:25% 75%;
+    background-repeat: no-repeat;
+}
+#hand{
+	background:rgba(24,24,24,0.5);
+	background-clip: content-box;
+	width: 550px;
+	margin-left: 55%;
+	padding: 20px;
+	border-radius: 10px;
+    overflow: auto;
+}
 /*Fin Conduce*/
 /*Inicio Tarifas*/
 #map{
-	width: 100%;
+	width: 50%;
 	height: 100vh;
 	border:2px solid black;
 }
@@ -75,7 +96,6 @@ button{
 	border: 0;
 	font-weight: 700;
 	border-radius: 2px;
-	font-family: "Raleway";
 	font-size: 15px;
 	display: inline-block;
 }
@@ -85,4 +105,9 @@ button:hover, button:focus{
 
 /*Fin Tarifas*/
 /*Inicio Footer */
+#footer{
+	background-color: #2b2b2b;
+	color: #9E9E9E;
+	height: 100vh;
+}
 /*Fin Footer */

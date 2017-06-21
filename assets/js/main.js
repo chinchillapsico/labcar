@@ -18,11 +18,12 @@ function initMap() {
     var functionExito = function(posicion) {
     	latitud = posicion.coords.latitude;
     	longitud = posicion.coords.longitude;
-
+        var image = "https://mapicons.mapsmarker.com/markers/transportation/road-transportation/car/?custom_color=000000";
     	var miUbicacion = new google.maps.Marker({
     		position: {lat:latitud, lng:longitud},
     		animation: google.maps.Animation.DROP,
-    		map: map
+    		map: map,
+    		icon:image + "car.png"
     	});
     	map.setZoom(17);
     	map.setCenter({lat:latitud, lng:longitud});
