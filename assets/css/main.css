@@ -49,7 +49,7 @@ a img{
 /*Inicio Hero */
 #hero{
 	background-image: url(../img/taxi.jpg);
-	height: 135vh;
+	height: 125vh;
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ a img{
 	width: 535px;
 	height: 55vh;
 	position: relative;
-	top: 275px;
+	top: 205px;
 	float: right;
 	padding: 30px;
 	border-radius: 3px;
@@ -71,12 +71,31 @@ a img{
 	height: 25%;
 	padding-left: 17px;
 }
-
+p a{
+	text-decoration: none;
+	color: white;
+}
+p a:hover{
+	color: black;
+	text-decoration: none;
+	border: 2px solid #FB8C00;
+	border-radius:4px;
+	padding: 8px; 
+}
+#btn-cdtor{
+	margin: 30px 40px 0 0;
+}
+#btn-cdtor:hover{
+	background-color: #FB8C00;
+	color: #424242;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
 /*Fin Hero */
 /*Inicio Información */
 #informacion{
 	background-color: #f7b617;
 	margin: 0;
+	height: 90vh;
 
 }
 .row{
@@ -90,6 +109,7 @@ a img{
     background-size: cover;
     background-position:25% 75%;
     background-repeat: no-repeat;
+    height: 70vh;
 }
 #hand{
 	background:rgba(24,24,24,0.5);
@@ -102,15 +122,21 @@ a img{
 }
 /*Fin Conduce*/
 /*Inicio Tarifas*/
+#tarifas{
+	background-color: #f7b617;
+	color: white;
+	height: 90vh;
+}
 #map{
+	margin-top: 79px;
 	width: 50%;
-	height: 100vh;
+	height: 50vh;
 	border:2px solid black;
-	cursor: url("../img/car.png"), auto;
+	
 }
 button{
 	text-align: center;
-	margin:15px auto;
+	margin:25px auto;
 	padding: 10px 15px;
 	color: black;
 	background-color: white;
@@ -123,14 +149,35 @@ button{
 button:hover, button:focus{
 	outline: 0;
 }
-#btn-cdtor{
-	margin: 30px 40px 0 10px;
-}
-#btn-cdtor:hover{
-	background-color: #FB8C00;
-	color: #424242;
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-}
+.controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 300px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+      #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+      }
 
 
 /*Fin Tarifas*/
@@ -138,6 +185,31 @@ button:hover, button:focus{
 #footer{
 	background-color: #2b2b2b;
 	color: #9E9E9E;
-	height: 100vh;
+	height: 90vh;
+}
+#img-footer{
+	padding-top: 50px;
+}
+#footer-line{
+	height: 50vh;
+	border-top: 1.5px solid #9E9E9E;
+	border-bottom: 1.5px solid #9E9E9E;
+	padding:30px 20px 10px 20px;
+	margin-top: 60px;
+}
+.list ul{
+	list-style:none;
+}
+a{
+	padding: 10px;
+	margin-bottom: 10px;
+}
+ul li a{
+	text-decoration: none;
+	color: #9E9E9E;
+	list-style:none;
+}
+#icons{
+	padding-top: 250px;
 }
 /*Fin Footer */

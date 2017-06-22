@@ -6,6 +6,7 @@ function initMap() {
 		zoomControl: false,
 		streetViewControl:false
 	});
+	var img = "http://www.flaticon.com/free-icon/car-directions_60829";
 	function buscar(){
 		if(navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(functionExito, functionError);
@@ -18,12 +19,11 @@ function initMap() {
     var functionExito = function(posicion) {
     	latitud = posicion.coords.latitude;
     	longitud = posicion.coords.longitude;
-        var image = "https://mapicons.mapsmarker.com/markers/transportation/road-transportation/car/?custom_color=000000";
     	var miUbicacion = new google.maps.Marker({
     		position: {lat:latitud, lng:longitud},
     		animation: google.maps.Animation.DROP,
     		map: map,
-    		icon:image + "car.png"
+    		icon: img
     	});
     	map.setZoom(17);
     	map.setCenter({lat:latitud, lng:longitud});
@@ -31,4 +31,12 @@ function initMap() {
    var functionError = function (error) {
 	alert("tenemos un problema con encontrar tu ubicación");
 	}
+
+	var partida = document.getElementById("partida");
+	var autocomplete = new google.maps.places.Autocomplete(partida);
+ 	autocomplete.bindTo('bounds', map);
+
+ 	var destino = document.getElementById("destino");
+	var autocomplete = new google.maps.places.Autocomplete(destino);
+ 	autocomplete.bindTo('bounds', map);
 } 
